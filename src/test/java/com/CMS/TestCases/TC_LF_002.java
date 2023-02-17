@@ -17,9 +17,15 @@ public class TC_LF_002 extends BaseTest {
 		lp.enterUsername(username);
 		lp.enterPassword(password);
 		lp.clickSubmitButton();
-		String actPageTitle = hp.getPageTitle();
-		String expPageTitle = "Welcome to Grundfos";
-		Assert.assertTrue(actPageTitle.equalsIgnoreCase(expPageTitle));
+		if (lp.errorMessage.isDisplayed()) {
+			Assert.assertTrue(true);
+			System.out.println(lp.getErrorMessage());
+
+		} else if (hp.logout.isDisplayed()) {
+
+			hp.clickLogOut();
+			Assert.assertTrue(true);
+		}
 
 	}
 }

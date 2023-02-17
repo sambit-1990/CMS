@@ -24,6 +24,9 @@ public class LoginPage {
 	@FindBy(xpath="(//input[@type='submit'])[1]")
 	WebElement submitButton;
 	
+	@FindBy(xpath="//td[@align='center']")
+	public WebElement errorMessage;
+	
 	
 	public void goToLoginPage()
 	{
@@ -45,5 +48,9 @@ public class LoginPage {
 		submitButton.click();
 	}
 	
+	public String getErrorMessage()
+	{
+		 return errorMessage.getText();
+	}
 
 }
