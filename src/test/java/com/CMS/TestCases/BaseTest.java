@@ -1,34 +1,58 @@
 package com.CMS.TestCases;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.time.Duration;
 import java.util.Properties;
-import java.util.logging.LogManager;
 import java.util.logging.Logger;
 
+import org.apache.commons.io.FileUtils;
 import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterClass;
-import org.testng.annotations.BeforeClass;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.annotations.BeforeTest;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Optional;
 import org.testng.annotations.Parameters;
+
+import com.CMS.Utilities.ConfigParser;
 
 public class BaseTest {
 	public static WebDriver driver;
 	public static Logger logger;
+	public static ConfigParser configFilesobj;
+	public static ConfigParser testDataobj;
+	public static String testDataFilepath = "";
+	public static String configDataFilepath = "";
+	public String filepath = "";
+	// public static String url = testDataobj.getPropertiesValue("url");
+	Properties prop;
 
-	@BeforeClass
+	@BeforeTest
 	@Parameters("browser")
-	public void setup(String browser) throws SecurityException, FileNotFoundException, IOException {
+	public void setup(@Optional String browser) throws SecurityException, FileNotFoundException, IOException {
+
+		if (browser == null) {
+			browser = "chrome";
+		}
+		configDataFilepath = System.getProperty("user.dir") + "\\ConfigFiles\\config.properties";
+		configFilesobj = new ConfigParser(configDataFilepath);
+		testDataFilepath = System.getProperty("user.dir")
+				+ "\\src\\test\\java\\com\\CMS\\TestData\\TestData.properties";
+		testDataobj = new ConfigParser(testDataFilepath);
 
 		String chromeDriverPath = System.getProperty("user.dir") + "\\Tools\\chromedriver.exe";
 		String firefoxDriverPath = System.getProperty("user.dir") + "\\Tools\\geckodriver.exe";
@@ -46,16 +70,6 @@ public class BaseTest {
 			throw new IllegalArgumentException("Invalid browser value!!");
 		}
 
-		driver.manage().window().maximize();
-		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		logger = Logger.getLogger("CMS");
-		LogManager.getLogManager().readConfiguration(new FileInputStream("Log.properties"));
-
-	}
-
-	@AfterClass
-	public void tearDown() {
-		driver.quit();
 	}
 
 	@DataProvider(name = "testData")
@@ -81,13 +95,26 @@ public class BaseTest {
 
 	}
 
-	public void dataDriven() throws IOException {
+	
+	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {
+		try {
+			TakesScreenshot ts = (TakesScreenshot) driver;
+			File screenshot = ts.getScreenshotAs(OutputType.FILE);
+			filepath = System.getProperty("user.dir") + "//Screenshots//" + testCaseName + ".png";
+			File file = new File(filepath);
+			FileUtils.copyFile(screenshot, file);
+			
 
-		String filepath = System.getProperty("user.dir") + "\\src\\test\\java\\com\\CMS\\TestData\\TestData.properties";
-		FileInputStream fis = new FileInputStream(filepath);
-		Properties prop = new Properties();
-		prop.load(fis);
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		return filepath;
 
+	}
+
+	public void explicitWait(WebElement element) {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+		wait.until(ExpectedConditions.visibilityOf(element));
 	}
 
 }

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>0/0/10</td>
+<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Feb 17 00:05:26 IST 2023</td>
+<td>Started on:</td><td>Mon Mar 06 02:06:56 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>1 seconds (1112 ms)</td>
+<tr><td>Total time:</td><td>12 seconds (12566 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -68,7 +68,7 @@ function toggleAllBoxes() {
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
 <table width='100%' border='1' class='invocation-failed'>
-<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -76,20 +76,37 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_001.setup()'><b>setup</b><br>Test class: com.CMS.TestCases.TC_LF_001</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1267556427", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1267556427'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
+<td title='com.CMS.TestCases.LoginPageTestCases.forgetPasswordTest()'><b>forgetPasswordTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases</td>
+<td><div><pre>java.lang.AssertionError: expected [Enter your Login ID to receive your password in mail.User Name] but found [Enter your Login ID to receive your password in mail.
+User Name]
+	at com.CMS.TestCases.LoginPageTestCases.forgetPasswordTest(LoginPageTestCases.java:52)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1358215229", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1358215229'><pre>java.lang.AssertionError: expected [Enter your Login ID to receive your password in mail.User Name] but found [Enter your Login ID to receive your password in mail.
+User Name]
+	at org.testng.Assert.fail(Assert.java:110)
+	at org.testng.Assert.failNotEquals(Assert.java:1577)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:149)
+	at org.testng.Assert.assertEquals(Assert.java:131)
+	at org.testng.Assert.assertEquals(Assert.java:655)
+	at org.testng.Assert.assertEquals(Assert.java:665)
+	at com.CMS.TestCases.LoginPageTestCases.forgetPasswordTest(LoginPageTestCases.java:52)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
 	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
 	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
 	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
@@ -101,11 +118,11 @@ in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>-1676572526</td>
-<td>com.CMS.TestCases.TC_LF_001@54422e18</td></tr>
+<td>1</td>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 </table><p>
-<table width='100%' border='1' class='invocation-skipped'>
-<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
 <td><b>Attribute(s)</b></td>
 <td width="30%"><b>Exception</b></td>
@@ -113,285 +130,50 @@ in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240, Baba@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1724399560", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1724399560'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240, Babai@123</td>
+<td></td>
 <td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240,  Baba@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1077316166", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1077316166'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240, Baba@123</td>
+<td></td>
+<td>1</td>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240, Babai@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1303362110", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1303362110'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 123456, password123</td>
+<td></td>
 <td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 123456, password123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1415979460", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1415979460'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 123456, Baba@123</td>
+<td></td>
 <td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240, password123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1646234040", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1646234040'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240,  Baba@123</td>
+<td></td>
+<td>1</td>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240, Baba@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1407428730", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1407428730'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240, Baba@123</td>
+<td></td>
+<td>1</td>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 70240,  Baba@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2124261761", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2124261761'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240, password123</td>
+<td></td>
 <td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters: 123456, Baba@123</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace255041198", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace255041198'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters:    ,    </td>
+<td></td>
 <td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 <tr>
-<td title='com.CMS.TestCases.TC_LF_002.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.TC_LF_002<br>Parameters:    ,    </td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace673367807", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace673367807'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.CMS.TestCases.TC_LF_002@2034b64c</td></tr>
-<tr>
-<td title='com.CMS.TestCases.TC_LF_001.openLandingPage()'><b>openLandingPage</b><br>Test class: com.CMS.TestCases.TC_LF_001</td>
-<td><div><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-... Removed 16 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1989811701", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1989811701'><pre>org.testng.TestNGException: 
-Parameter &apos; browser&apos; is required by BeforeSuite on method setup but has not been marked @Optional or defined
-in C:\Users\SAMBIT\Documents\GitHub\CMS\testng.xml
-	at org.testng.internal.Parameters.createParams(Parameters.java:267)
-	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:355)
-	at org.testng.internal.Parameters.createParameters(Parameters.java:684)
-	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:166)
-	at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:277)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:376)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:330)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
-	at org.testng.TestNG.runSuites(TestNG.java:1099)
-	at org.testng.TestNG.run(TestNG.java:1067)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div></td>
-<td>0</td>
-<td>com.CMS.TestCases.TC_LF_001@54422e18</td></tr>
+<td title='com.CMS.TestCases.LoginPageTestCases.successfulLoginTest()'><b>successfulLoginTest</b><br>Test class: com.CMS.TestCases.LoginPageTestCases<br>Parameters: 70240,  Baba@123</td>
+<td></td>
+<td>1</td>
+<td>com.CMS.TestCases.LoginPageTestCases@177bea38</td></tr>
 </table><p>
 </body>
 </html>

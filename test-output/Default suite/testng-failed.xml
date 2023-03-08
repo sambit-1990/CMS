@@ -3,13 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CMS.TestCases.TC_LF_001">
+      <class name="com.CMS.TestCases.HomePageTestCases">
         <methods>
-          <include name="tearDown"/>
-          <include name="test"/>
+          <include name="beforerun"/>
           <include name="setup"/>
+          <include name="tearDown"/>
+          <include name="salesMenuValidation"/>
         </methods>
-      </class> <!-- com.CMS.TestCases.TC_LF_001 -->
+      </class> <!-- com.CMS.TestCases.HomePageTestCases -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
