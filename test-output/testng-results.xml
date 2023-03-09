@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="10" passed="9" failed="1" skipped="0">
+<testng-results ignored="1" total="2" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-06T02:06:56 IST" name="Suite" finished-at="2023-03-06T02:07:08 IST" duration-ms="12566">
+  <suite started-at="2023-03-10T00:27:13 IST" name="Failed suite [Suite]" finished-at="2023-03-10T00:27:17 IST" duration-ms="3613">
     <groups>
     </groups>
-    <test started-at="2023-03-06T02:06:56 IST" name="Test" finished-at="2023-03-06T02:07:08 IST" duration-ms="12566">
+    <test started-at="2023-03-10T00:27:13 IST" name="Test(failed)" finished-at="2023-03-10T00:27:17 IST" duration-ms="3613">
       <class name="com.CMS.TestCases.LoginPageTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:06:56 IST" name="setup" finished-at="2023-03-06T02:06:58 IST" duration-ms="2191" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@19835e64]" started-at="2023-03-10T00:27:13 IST" name="setup" finished-at="2023-03-10T00:27:15 IST" duration-ms="1880" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,155 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:06:58 IST" name="beforeRun" finished-at="2023-03-06T02:06:59 IST" duration-ms="777" status="PASS">
+        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@19835e64]" started-at="2023-03-10T00:27:15 IST" name="beforeRun" finished-at="2023-03-10T00:27:16 IST" duration-ms="621" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeRun -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:00 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:01 IST" duration-ms="1592" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Baba@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:01 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:02 IST" duration-ms="482" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:02 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:02 IST" duration-ms="505" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[password123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:02 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:03 IST" duration-ms="459" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[123456]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Baba@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:03 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:03 IST" duration-ms="285" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[   ]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[   ]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:03 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:03 IST" duration-ms="553" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Babai@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:03 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:05 IST" duration-ms="1065" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Baba@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:05 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:06 IST" duration-ms="1153" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ Baba@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:06 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-06T02:07:07 IST" duration-ms="1336" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[70240]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[ Baba@123]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- successfulLoginTest -->
-        <test-method signature="forgetPasswordTest()[pri:2, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:07 IST" name="forgetPasswordTest" finished-at="2023-03-06T02:07:08 IST" duration-ms="1010" status="FAIL">
+        <test-method signature="forgetPasswordTest()[pri:2, instance:com.CMS.TestCases.LoginPageTestCases@19835e64]" started-at="2023-03-10T00:27:16 IST" name="forgetPasswordTest" finished-at="2023-03-10T00:27:16 IST" duration-ms="616" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Enter your Login ID to receive your password in mail.User Name] but found [Enter your Login ID to receive your password in mail.
@@ -214,11 +70,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgetPasswordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@177bea38]" started-at="2023-03-06T02:07:08 IST" name="tearDown" finished-at="2023-03-06T02:07:08 IST" duration-ms="270" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@19835e64]" started-at="2023-03-10T00:27:17 IST" name="tearDown" finished-at="2023-03-10T00:27:17 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.CMS.TestCases.LoginPageTestCases -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Test(failed) -->
+  </suite> <!-- Failed suite [Suite] -->
 </testng-results>
