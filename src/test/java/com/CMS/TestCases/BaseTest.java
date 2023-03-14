@@ -44,7 +44,7 @@ public class BaseTest {
 	@BeforeTest
 	@Parameters("browser")
 	public void setup(@Optional String browser) throws SecurityException, FileNotFoundException, IOException {
-
+		System.setProperty("webdriver.http.factory", "jdk-http-client");
 		if (browser == null) {
 			browser = "chrome";
 		}
@@ -53,7 +53,7 @@ public class BaseTest {
 		testDataFilepath = System.getProperty("user.dir")
 				+ "\\src\\test\\java\\com\\CMS\\TestData\\TestData.properties";
 		testDataobj = new ConfigParser(testDataFilepath);
-
+		
 		String chromeDriverPath = System.getProperty("user.dir") + "\\Tools\\chromedriver.exe";
 		String firefoxDriverPath = System.getProperty("user.dir") + "\\Tools\\geckodriver.exe";
 		String msedgeDriverPath = System.getProperty("user.dir") + "\\Tools\\msedgedriver.exe";
