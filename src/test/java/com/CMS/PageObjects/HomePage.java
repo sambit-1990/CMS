@@ -34,7 +34,7 @@ public class HomePage extends BaseTest {
 	WebElement textMessage;
 	
 	@FindBy(xpath = "//div[@id='ctl00_ContentPlaceHolder1_ASPxPopupControlSalesAndService_ASPxButtonSpares4_CD'] ")
-	WebElement serviceOption;
+	public WebElement serviceOption;
 	
 	@FindBy(xpath = "//span[@title='Menu']")
 	public WebElement menuOption;

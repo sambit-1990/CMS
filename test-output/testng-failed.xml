@@ -1,20 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [Failed suite [Suite]]" guice-stage="DEVELOPMENT">
-  <parameter name="browser" value="chrome"/>
-  <listeners>
-    <listener class-name="com.CMS.Utilities.Listeners"/>
-  </listeners>
-  <test thread-count="5" name="Test(failed)(failed)">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.CMS.TestCases.LoginPageTestCases">
+      <class name="com.CMS.TestCases.ServiceModuleTestCases">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
+          <include name="validateChangePasswordFunction"/>
           <include name="beforeRun"/>
-          <include name="forgetPasswordTest"/>
+          <include name="afterRun"/>
         </methods>
-      </class> <!-- com.CMS.TestCases.LoginPageTestCases -->
+      </class> <!-- com.CMS.TestCases.ServiceModuleTestCases -->
     </classes>
-  </test> <!-- Test(failed)(failed) -->
-</suite> <!-- Failed suite [Failed suite [Suite]] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
