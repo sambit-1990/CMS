@@ -6,9 +6,9 @@
       <class name="com.CMS.TestCases.ServiceModuleTestCases">
         <methods>
           <include name="setup"/>
-          <include name="validateChangePasswordFunction"/>
           <include name="beforeRun"/>
           <include name="afterRun"/>
+          <include name="verifyNewPasswordField" invocation-numbers="0"/>
         </methods>
       </class> <!-- com.CMS.TestCases.ServiceModuleTestCases -->
     </classes>

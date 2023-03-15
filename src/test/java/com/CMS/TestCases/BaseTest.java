@@ -94,6 +94,29 @@ public class BaseTest {
 		return data;
 
 	}
+	
+	@DataProvider(name = "testData_Password")
+	public Object[][] testData_Password() throws IOException {
+
+		DataFormatter formatter = new DataFormatter();
+		String filePath = System.getProperty("user.dir") + "\\src\\test\\java\\com\\CMS\\TestData\\TestData.xlsx";
+		FileInputStream fis = new FileInputStream(filePath);
+		XSSFWorkbook wb = new XSSFWorkbook(fis);
+		XSSFSheet sheet = wb.getSheetAt(1);
+		int rowCount = sheet.getPhysicalNumberOfRows();
+		XSSFRow row = sheet.getRow(0);
+		int columnCount = row.getPhysicalNumberOfCells();
+		Object[][] data = new Object[rowCount - 1][columnCount];
+		for (int i = 0; i < rowCount - 1; i++) {
+			row = sheet.getRow(i + 1);
+			for (int j = 0; j < columnCount; j++) {
+				XSSFCell cell = row.getCell(j);
+				data[i][j] = formatter.formatCellValue(cell);
+			}
+		}
+		return data;
+
+	}
 
 	
 	public String getScreenShot(String testCaseName, WebDriver driver) throws IOException {

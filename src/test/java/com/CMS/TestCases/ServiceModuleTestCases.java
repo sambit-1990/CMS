@@ -41,6 +41,12 @@ public class ServiceModuleTestCases extends BaseTest {
 		sm.passwordChange();
 		Assert.assertTrue(true);
 	}
+	
+	@Test(priority=1, dataProvider = "testData_Password")
+	public void verifyNewPasswordField(String newPassword,String confirmNewPassword)
+	{
+		sm.newPasswordFieldCheck(newPassword, confirmNewPassword);
+	}
 
 	@AfterClass
 	public void afterRun() {

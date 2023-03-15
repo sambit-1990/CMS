@@ -7,14 +7,14 @@
   </listeners>
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.CMS.TestCases.LoginPageTestCases">
+      <class name="com.CMS.TestCases.ServiceModuleTestCases">
         <methods>
-          <include name="tearDown"/>
           <include name="setup"/>
           <include name="beforeRun"/>
-          <include name="forgetPasswordTest"/>
+          <include name="afterRun"/>
+          <include name="verifyNewPasswordField" invocation-numbers="0"/>
         </methods>
-      </class> <!-- com.CMS.TestCases.LoginPageTestCases -->
+      </class> <!-- com.CMS.TestCases.ServiceModuleTestCases -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="14" passed="14" failed="0" skipped="0">
+<testng-results ignored="0" total="15" passed="14" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-03-14T15:43:44 IST" name="Suite" finished-at="2023-03-14T15:43:54 IST" duration-ms="9288">
+  <suite started-at="2023-03-14T19:43:04 IST" name="Suite" finished-at="2023-03-14T19:43:13 IST" duration-ms="9079">
     <groups>
     </groups>
-    <test started-at="2023-03-14T15:43:44 IST" name="Test" finished-at="2023-03-14T15:43:54 IST" duration-ms="9288">
+    <test started-at="2023-03-14T19:43:04 IST" name="Test" finished-at="2023-03-14T19:43:13 IST" duration-ms="9079">
       <class name="com.CMS.TestCases.LoginPageTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:44 IST" name="setup" finished-at="2023-03-14T15:43:46 IST" duration-ms="1369" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:04 IST" name="setup" finished-at="2023-03-14T19:43:05 IST" duration-ms="1374" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,11 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:46 IST" name="beforeRun" finished-at="2023-03-14T15:43:46 IST" duration-ms="592" status="PASS">
+        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:05 IST" name="beforeRun" finished-at="2023-03-14T19:43:06 IST" duration-ms="580" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeRun -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:48 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:49 IST" duration-ms="1220" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:07 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:08 IST" duration-ms="1264" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -38,7 +38,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:49 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:49 IST" duration-ms="406" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:08 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:09 IST" duration-ms="319" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -54,7 +54,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:49 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:50 IST" duration-ms="409" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:09 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:09 IST" duration-ms="342" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -70,7 +70,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:50 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:50 IST" duration-ms="313" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:09 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:09 IST" duration-ms="323" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -86,7 +86,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:50 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:50 IST" duration-ms="160" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:09 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:09 IST" duration-ms="219" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -102,7 +102,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:50 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:50 IST" duration-ms="323" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:09 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:10 IST" duration-ms="323" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -118,7 +118,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:50 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:51 IST" duration-ms="752" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:10 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:11 IST" duration-ms="749" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -134,7 +134,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:51 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:52 IST" duration-ms="754" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:11 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:11 IST" duration-ms="766" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -150,7 +150,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:52 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T15:43:53 IST" duration-ms="869" status="PASS">
+        <test-method signature="successfulLoginTest(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:11 IST" name="successfulLoginTest" data-provider="testData" finished-at="2023-03-14T19:43:12 IST" duration-ms="778" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -166,77 +166,173 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- successfulLoginTest -->
-        <test-method signature="forgetPasswordTest()[pri:2, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:53 IST" name="forgetPasswordTest" finished-at="2023-03-14T15:43:53 IST" duration-ms="610" status="PASS">
+        <test-method signature="forgetPasswordTest()[pri:2, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:12 IST" name="forgetPasswordTest" finished-at="2023-03-14T19:43:13 IST" duration-ms="642" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- forgetPasswordTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@5b6ec132]" started-at="2023-03-14T15:43:53 IST" name="tearDown" finished-at="2023-03-14T15:43:54 IST" duration-ms="181" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.LoginPageTestCases@31ff43be]" started-at="2023-03-14T19:43:13 IST" name="tearDown" finished-at="2023-03-14T19:43:13 IST" duration-ms="194" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.CMS.TestCases.LoginPageTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite -->
-  <suite started-at="2023-03-14T15:44:03 IST" name="Suite (1)" finished-at="2023-03-14T15:44:08 IST" duration-ms="4108">
+  <suite started-at="2023-03-14T19:43:23 IST" name="Suite (1)" finished-at="2023-03-14T19:43:48 IST" duration-ms="24538">
     <groups>
     </groups>
-    <test started-at="2023-03-14T15:44:03 IST" name="Test" finished-at="2023-03-14T15:44:08 IST" duration-ms="4108">
+    <test started-at="2023-03-14T19:43:23 IST" name="Test" finished-at="2023-03-14T19:43:48 IST" duration-ms="24538">
       <class name="com.CMS.TestCases.ServiceModuleTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T15:44:03 IST" name="setup" finished-at="2023-03-14T15:44:04 IST" duration-ms="730" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T19:43:23 IST" name="setup" finished-at="2023-03-14T19:43:24 IST" duration-ms="814" status="PASS">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[chrome]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T15:44:04 IST" name="beforeRun" finished-at="2023-03-14T15:44:06 IST" duration-ms="1814" status="PASS">
+        <test-method is-config="true" signature="beforeRun()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T19:43:24 IST" name="beforeRun" finished-at="2023-03-14T19:43:26 IST" duration-ms="1770" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeRun -->
-        <test-method signature="validateChangePasswordFunction()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T15:44:06 IST" name="validateChangePasswordFunction" finished-at="2023-03-14T15:44:07 IST" duration-ms="1419" status="PASS">
+        <test-method signature="validateChangePasswordFunction()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T19:43:26 IST" name="validateChangePasswordFunction" finished-at="2023-03-14T19:43:27 IST" duration-ms="1319" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateChangePasswordFunction -->
-        <test-method is-config="true" signature="afterRun()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T15:44:07 IST" name="afterRun" finished-at="2023-03-14T15:44:08 IST" duration-ms="145" status="PASS">
+        <test-method signature="verifyNewPasswordField(java.lang.String,java.lang.String)[pri:1, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T19:43:27 IST" name="verifyNewPasswordField" data-provider="testData_Password" finished-at="2023-03-14T19:43:47 IST" duration-ms="20110" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Abcd123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Abcdefgh]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@title='Menu']' (tried for 10 second(s) with 500 milliseconds interval)]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of Proxy element for: DefaultElementLocator 'By.xpath: //span[@title='Menu']' (tried for 10 second(s) with 500 milliseconds interval)
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:87)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+at com.CMS.Utilities.WaitUtilities.WaitExplicitly(WaitUtilities.java:26)
+at com.CMS.PageObjects.ServiceModule.newPasswordFieldCheck(ServiceModule.java:60)
+at com.CMS.TestCases.ServiceModuleTestCases.verifyNewPasswordField(ServiceModuleTestCases.java:48)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:578)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:384)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:345)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:126)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:418)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//span[@title='Menu']"}
+  (Session info: chrome=111.0.5563.65)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.0', revision: '267030adea'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '19.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b5576d7b45d7ea4c399f4af06590775e, findElement {using=xpath, value=//span[@title='Menu']}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 111.0.5563.65, chrome: {chromedriverVersion: 110.0.5481.77 (65ed616c6e8e..., userDataDir: C:\Users\SAMBIT\AppData\Loc...}, goog:chromeOptions: {debuggerAddress: localhost:51903}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:51903/devtoo..., se:cdpVersion: 111.0.5563.65, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: b5576d7b45d7ea4c399f4af06590775e
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:307)
+at org.openqa.selenium.support.ui.ExpectedConditions.access$000(ExpectedConditions.java:40)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:293)
+at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewPasswordField -->
+        <test-method is-config="true" signature="afterRun()[pri:0, instance:com.CMS.TestCases.ServiceModuleTestCases@1e461e41]" started-at="2023-03-14T19:43:48 IST" name="afterRun" finished-at="2023-03-14T19:43:48 IST" duration-ms="167" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterRun -->
       </class> <!-- com.CMS.TestCases.ServiceModuleTestCases -->
     </test> <!-- Test -->
   </suite> <!-- Suite (1) -->
-  <suite started-at="2023-03-14T15:43:54 IST" name="Suite (0)" finished-at="2023-03-14T15:44:03 IST" duration-ms="9515">
+  <suite started-at="2023-03-14T19:43:13 IST" name="Suite (0)" finished-at="2023-03-14T19:43:23 IST" duration-ms="9886">
     <groups>
     </groups>
-    <test started-at="2023-03-14T15:43:54 IST" name="Test" finished-at="2023-03-14T15:44:03 IST" duration-ms="9515">
+    <test started-at="2023-03-14T19:43:13 IST" name="Test" finished-at="2023-03-14T19:43:23 IST" duration-ms="9886">
       <class name="com.CMS.TestCases.HomePageTestCases">
-        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:43:54 IST" name="setup" finished-at="2023-03-14T15:43:55 IST" duration-ms="734" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String)[pri:0, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:13 IST" name="setup" finished-at="2023-03-14T19:43:14 IST" duration-ms="767" status="PASS">
           <params>
             <param index="0">
-              <value is-null="true"/>
+              <value>
+                <![CDATA[chrome]]>
+              </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method is-config="true" signature="beforerun()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:43:55 IST" name="beforerun" finished-at="2023-03-14T15:43:56 IST" duration-ms="1417" status="PASS">
+        <test-method is-config="true" signature="beforerun()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:14 IST" name="beforerun" finished-at="2023-03-14T19:43:16 IST" duration-ms="1548" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforerun -->
-        <test-method signature="ginStockDataValidation()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:43:56 IST" name="ginStockDataValidation" finished-at="2023-03-14T15:44:00 IST" duration-ms="3871" status="PASS">
+        <test-method signature="ginStockDataValidation()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:16 IST" name="ginStockDataValidation" finished-at="2023-03-14T19:43:20 IST" duration-ms="4035" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ginStockDataValidation -->
-        <test-method signature="serviceMenuValidation()[pri:1, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:44:00 IST" name="serviceMenuValidation" finished-at="2023-03-14T15:44:02 IST" duration-ms="2340" status="PASS">
+        <test-method signature="serviceMenuValidation()[pri:1, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:20 IST" name="serviceMenuValidation" finished-at="2023-03-14T19:43:22 IST" duration-ms="2322" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- serviceMenuValidation -->
-        <test-method signature="salesMenuValidation()[pri:2, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:44:02 IST" name="salesMenuValidation" finished-at="2023-03-14T15:44:03 IST" duration-ms="988" status="PASS">
+        <test-method signature="salesMenuValidation()[pri:2, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:22 IST" name="salesMenuValidation" finished-at="2023-03-14T19:43:23 IST" duration-ms="993" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- salesMenuValidation -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@265adfad]" started-at="2023-03-14T15:44:03 IST" name="tearDown" finished-at="2023-03-14T15:44:03 IST" duration-ms="161" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.CMS.TestCases.HomePageTestCases@7a1a14a4]" started-at="2023-03-14T19:43:23 IST" name="tearDown" finished-at="2023-03-14T19:43:23 IST" duration-ms="218" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
